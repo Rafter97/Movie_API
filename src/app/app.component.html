@@ -15,7 +15,7 @@
     <div *ngIf="movieData" class="ui raised segment">
       <h3 *ngIf="movieData">Movie: {{movieData.Title}}</h3>
       <img *ngIf="movieData" src= {{movieData.Poster}} [style.height.px]='imageHeight'>
-    
+      
       <p *ngIf="movieData">Plot: {{ movieData.Plot }}</p>
       <p *ngIf="movieData"> {{movieData.Ratings[0].Source}} : {{movieData.Ratings[0].Value}}</p>
       <p *ngIf="movieData"> {{movieData.Ratings[1].Source}} : {{movieData.Ratings[1].Value}}</p>
